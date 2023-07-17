@@ -1,0 +1,3 @@
+# Descrição 
+
+Efeito de rolagem sobre uma imagem utilizando div's.
