@@ -1,0 +1,3 @@
+# Descrição
+
+Animação básica em CSS que realiza a transição entre três formas geométricas: Qadrado, Triângulo e o Círculo.

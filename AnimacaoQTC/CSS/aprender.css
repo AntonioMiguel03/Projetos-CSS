@@ -1,0 +1,54 @@
+@charset "uft-8";
+/* CSS Document */
+@keyframes dig{
+    0%{
+        /*border-radius: 0%;*/
+        background-color: red;
+		-webkit-clip-path: polygon(0% 0, 100% 0, 100% 100%, 0 100%, 0 100%);
+		transform:translateX(0px) translateY(0px) rotate(0deg);
+    }
+    75%{
+		/*triangulo*/
+		/*como usa o recurso*/
+		/*-webkit-clip-path: polygon(5% 0, 100% 0, 100% 100%, 0 100%, 0 100%);*/
+		
+		-webkit-clip-path: polygon(48% 0, 48% 0, 100% 100%, 0 100%, 0 100%);
+		transform:translateX(0px) translateY(0px) rotate(0deg);
+		
+		background-color: green;
+    }
+
+    100%{
+        transform:translateX(0px) translateY(0px) scale(1.05); 
+		
+        background-color: gray;
+		-webkit-clip-path: circle(50%);
+		
+		background-color: blue;
+		margin-top:10px;
+		margin-right:10px;
+    }
+}
+.animation{
+	/*deixa o margin no centro automatico*/
+	/*margin: 0 auto;*/
+	border-radius: 0%;
+	width: 200px;
+	height: 200px;
+	background-color: red;
+	animation-name: dig;
+	animation-iteration-count: infinite;
+	animation-duration: 4s;
+	position: absolute;
+	margin-left:580px;
+	
+}	
+
+p{
+	text-align: center;
+	position: absolute;
+	margin-top: 95px;
+	margin-left:646px;
+}
+	
+
