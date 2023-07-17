@@ -1,0 +1,63 @@
+/*sempre coloque no inicio da folha as fontes utilizadas*/
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    background-color: #a5a5a5;
+}
+
+
+.container-box {
+    display: grid;
+    /* espaçamento entre as linhas e colunas */
+    grid-gap: 10px;
+    grid-template-columns: auto;
+    /*largura da linha do cabecalho, as 3 linhas de contudo e a linha do rodape*/
+    grid-template-rows: 5% 33%  33% 33% 5%;
+	
+    /* disposicao dos items de acordo com o padrao pre definido */
+    grid-template-areas: 'header header header''a b c' 'd e f' 'g h i' 'footer footer footer';
+}
+
+.header { grid-area: header; }
+
+.a { grid-area: a; }
+.b { grid-area: b; }
+.c { grid-area: c; }
+
+.d { grid-area: d; }
+.e { grid-area: e; }
+.f { grid-area: f; }
+
+.g { grid-area: g; }
+.h { grid-area: h; }
+.i { grid-area: i; }
+
+.footer { grid-area: footer; }
+
+.box {
+    background-color: #ebf0ec;
+}
+
+.box h1, h2{
+    font-family: 'Rampart One', cursive;
+}
+
+.box header h1{
+	margin-top: 0.5%;
+}
+
+.box p{
+	margin: 2%;
+    text-align: justify;
+}
+
+.box .imagens{
+    width: 90%;
+    height: 280px;
+}
+
