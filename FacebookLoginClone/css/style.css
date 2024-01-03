@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f2f5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#conteiner {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0%;
+}
+
+#logo {
+    width: 25rem;
+    margin-top: 180px;
+    margin-left: 195px;
+}
+
+#subtitulo {
+    word-wrap: break-word;
+    width: 55%;
+    font-size: 2vw;
+    margin-left: 25%;
+}
+
+#formulario {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 350px;
+    margin-top: 25%;
+    margin-right: 150px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #737272;
+}
+
+#formulario input {
+    width: 94%;
+    margin: 3%;
+    height: 50px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #7c7979c9;
+    padding-left: 15px;
+    /*Caso queira centralizar o input*/
+    /*text-align: center;*/
+}
+
+#formulario input::placeholder {
+    font-size: 1vw;
+    text-indent: 0px;
+}
+
+#formulario input:focus {
+    outline: none !important;
+    border: 1px solid #1877f2;
+    box-shadow: 0 0 10px #1877f2;
+}
+
+#iniciar {
+    background-color: #1877f2;
+    width: 95%;
+    margin: 3%;
+    height: 50px;
+    border-radius: 10px;
+    border-style: none;
+    color: #fff;
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+#iniciar:hover {
+    cursor: pointer;
+}
+
+hr {
+    margin-top: 3%;
+    margin-left: 5%;
+    width: 90%;
+}
+
+#cadastrar {
+    background-color: #42b72a;
+    width: 35%;
+    height: 50px;
+    margin-left: 35%;
+    border-radius: 10px;
+    border-style: none;
+    color: #fff;
+    font-size: 1vw;
+    font-weight: bold;
+}
+
+#cadastrar:hover {
+    background-color: #196e08;
+    cursor: pointer;
+}
+
+#formulario a {
+    margin-left: 35%;
+}
+
+#rdpConta {
+    margin-top: 5%;
+    margin-left: 7%;
+}
+
+#esqSenha {
+    color: #1877f2;
+    text-decoration: none;
+}
+
+#crConta {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#rodapePagina {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 25vh;
+}
+
+#rodapePagina img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    #conteiner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #logo {
+        width: 90%;
+        margin-top: 10%;
+        margin-left: 5%;
+    }
+
+    #subtitulo {
+        display: none;
+    }
+
+    #formulario {
+        margin: auto;
+        width: 90%;
+        height: 95%;
+        margin-top: 5%;
+    }
+
+    #formulario input {
+        width: 93%;
+    }
+
+    #formulario input::placeholder {
+        font-size: 100%;
+        text-indent: 0px;
+    }
+
+    #iniciar {
+        width: 93%;
+        font-size: 100%;
+    }
+
+    #formulario a {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    #cadastrar {
+        margin-left: 30%;
+        font-size: 70%;
+    }
+
+    hr {
+        margin-top: 2%;
+    }
+
+    #rdpConta {
+        margin-top: 5%;
+        margin-left: 7%;
+        font-size: 3.5vw;
+    }
+
+    #rodapePagina {
+        width: 100%;
+        height: 3rem;
+        top: 110%;
+        overflow-y: hidden;
+    }
+
+    #rodapePagina img {
+        height: 100%;
+    }
+}

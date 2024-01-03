@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script type="text/javascript" src="javascript/script.js"></script>
+    <link rel="icon" href="img/facebook_icon.ico" />
+    <title>Facebook - Inicie uma sessão ou registre-se</title>
+</head>
+
+<body>
+    <div id="conteiner">
+        <div class="subConteiner">
+            <img src="./img/logo.png" id="logo" alt="Facebook Logo" title="Bem-Vindo ao Facebook!" />
+            <p id="subtitulo">O Facebook te ajuda a comunicar e a partilhar com as pessoas que fazem parte da tua vida.
+            </p>
+        </div>
+        <div class="subConteiner">
+            <div id="formulario">
+                <form>
+                    <input type="text" name="usuario" placeholder="Email ou número de Telefone" />
+                    <input type="password" name="senha" placeholder="Senha" />
+                    <button id="iniciar" onclick="btnIniciar()">Iniciar sessão</button>
+                    <a href="#" id="esqSenha" onclick="btnEsqueceuSenha()">Esqueceu a senha?</a>
+                    </br>
+                    <hr>
+                    </br>
+                    <button id="cadastrar" onclick="btnCadastrar()">Criar nova conta</button>
+                    <br></br>
+                </form>
+            </div>
+            <p id="rdpConta"><a href="#" id="crConta" onclick="btnCadastrar()">Cria uma Conta</a> para um usuário, marca
+                ou empresa.</p>
+        </div>
+    </div>
+    <div id="rodapePagina">
+        <img src="./img/rodapeFacebook.png" alt="Rodapé da Página" title="Rodapé" />
+    </div>
+</body>
+
+</html>
